@@ -1,19 +1,41 @@
-# Game Boy Boilerplate
+# GBDK Game Boy Boilerplate
 
-## Dependencies
+🕹️ A minimal starting point for developing Game Boy games in C using GBDK.
 
-This project includes a vendored copy of the GBDK toolchain under `vendor/gbdk/` to ensure build reproducibility and version locking across environments. No external installation is required.
+This boilerplate includes a vendored copy of the GBDK toolchain and a simple Makefile that compiles all `.c` files inside the `src/` folder into a `.gb` ROM.
 
-## Building the game
+## ✨ Features
 
-Simply run the Makefile with `make` command.
+- 📦 Vendored GBDK toolchain (`vendor/gbdk`)
+- ⚙️ Clean Makefile with support for multiple `.c` files
+- 🚀 Ready to compile with `make`
 
-## Running the game
+## 🧪 Getting Started
 
-The building process will generate a game ROM located at `build/hello.gb` (you can change this name in the Makefile).
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/pedroafabri/gbdk-gameboy-boilerplate.git
+    cd gbdk-gameboy-boilerplate
+    ```
 
-Simply run the `.gb` file in your emulator of choice.
+2. Build the project:
+    ```bash
+    make
+    ```
 
-## Author
+3. The compiled ROM will be at `build/hello.gb`.
 
-Made by Pedro Augusto Fabri
+## 🗂 Folder Structure
+
+```
+.
+├── src/          # Your .c source files
+├── build/        # Output .gb file (gitignored)
+├── vendor/       # Vendored GBDK toolchain
+├── Makefile      # Build logic
+└── .gitignore
+```
+
+## 📝 License
+
+MIT
