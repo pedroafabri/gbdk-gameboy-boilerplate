@@ -1,0 +1,6 @@
+# Ignore build files, keep build folder
+build/*
+!build/.gitkeep
+
+# Ignore personal IDE stuff
+.vscode/*
